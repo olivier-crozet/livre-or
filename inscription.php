@@ -35,6 +35,7 @@
 
         <?php
 
+$connexion= mysqli_connect("localhost","root","","livreor");
 
 $requete= "select * from utilisateurs";
 
@@ -60,29 +61,28 @@ if(isset($_POST['submit']))
                     $reponse=mysqli_query($connexion,$newlogin);
                     $numberlogin=mysqli_query($reponse);
 
-                        if($pws==$confirm)
-                        {
-                            $psw=password_hash($_POST["mdp"],PASSWORD_BCRYPT);
-                        }
-                        else
-                        {
-                            echo "Les passwords doivent etre identiques";
-                        }
-            
+                    if($pws==$confirm)
+                    {
+                        $psw=password_hash($_POST["mdp"],PASSWORD_BCRYPT);
+                        
+                    }
+                else
+                   {
+                            echo "Les passwords doivent etre identiques.";
+                   }
+                  }   
                     else
                     {
-                        echo "Ce login est dejà utilisé";
+                        echo "Ce login est dejà utilisé.";
                     }
-            
+                }
                  else
                 {
                     echo "Tous les champs doivent etre remplis.";    
                 }
+         
 
-            else
-            {
-                echo "Votre login n'est pas valide";
-            }
+                 
         
 }
        
