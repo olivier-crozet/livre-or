@@ -18,7 +18,7 @@ $connexion = mysqli_connect("localhost","root","","moduleconnexion");
 	<link rel="stylesheet" type="text/css" href="inscription.css">
 	<title>inscription</title>
 </head>
-<body>  
+<body class="fd">  
 <html>
 <head>
 	<meta charset="utf-8">
