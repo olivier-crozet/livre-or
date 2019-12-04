@@ -1,0 +1,63 @@
+body{
+    background-image: url("fondinscription.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;    
+}
+
+        
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    background-color: rgb(29, 27, 27);
+}
+        
+
+ul{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+       
+
+li{
+    list-style: none;
+    padding: 15px;   
+}
+        
+
+li a{ 
+    color: white; 
+    text-decoration: none; 
+    font-size: 20px; 
+}
+
+
+.align{
+    margin-left: 10%;
+    font-size: 150%;
+}
+
+
+.nom{
+    text-shadow: -1px -2px white, 3px 1px rgb(6, 196, 243);
+}
+
+
+#form1{
+    margin-top: 10%;
+    margin-left: 10%;
+    font-size: 25px;
+ }
+        
+
+li:hover{
+    background-color: rgb(6, 196, 243);
+    }
+        
+
+    #logo{
+        margin-top:5%;
+        margin-left: 45%;
+    }
