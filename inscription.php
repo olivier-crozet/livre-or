@@ -53,35 +53,38 @@ if(isset($_POST['submit']))
 
      if(!empty($login) && !empty($psw) && !empty($confirm))
         { 
-            $connexion= mysqli_connect("localhost","root","","livreor");
-
-                if($numberlogin<1)
-                {
+                    $connexion= mysqli_connect("localhost","root","","livreor");
                     $newlogin="SELECT id FROM utilisateurs WHERE login='".$login."'";
                     $reponse=mysqli_query($connexion,$newlogin);
-                    $numberlogin=mysqli_query($reponse);
+                    $numberlogin=mysqli_fetch_all($reponse);
+                    var_dump($numberlogin);
+                if(empty($numberlogin))
+                {
+                   
 
-                    if($pws==$confirm)
+                    if($psw==$confirm)
                     {
-                        $psw=password_hash($_POST["mdp"],PASSWORD_BCRYPT);
+                        $psw=password_hash($psw,PASSWORD_BCRYPT);
+                        $newinsert="INSERT INTO `utilisateurs` (`id`, `login`, `password`) VALUES (NULL, '".$login."', '".$psw."');";
+                        $reponse=mysqli_query($connexion,$newinsert);
+                        
                         
                     }
-                else
-                   {
-                            echo "Les passwords doivent etre identiques.";
-                   }
-                  }   
-                    else
+                     else
                     {
-                        echo "Ce login est dejà utilisé.";
+                            echo "Les passwords doivent etre identiques.";
                     }
-                }
-                 else
+                }   
+                else
                 {
-                    echo "Tous les champs doivent etre remplis.";    
+                    echo "Ce login est dejà utilisé.";
                 }
+        }
+        else
+        {
+            echo "Tous les champs doivent etre remplis.";    
+        }
          
-
                  
         
 }
