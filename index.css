@@ -10,7 +10,10 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-
+header
+{
+z-index: 10000000;
+}
 .align{
     margin-top: -5%;
     margin-bottom: 4%;
