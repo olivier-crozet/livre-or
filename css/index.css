@@ -63,6 +63,8 @@
 {
 	display: flex;
     flex-direction: row;
+    background-color: #4fc9e994;
+    padding: 3%;
 }
 .oc-article-connexion-php
 {
@@ -78,13 +80,23 @@
 {
 	text-align: center;
     border: ridge;
-    margin-top: 0%;
+    margin: 0%;
 }
 .image-connexion-php
 {
 	    width: 80%;
 	    box-shadow: 3px 2px #00000091;
-}	
+
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.image-connexion-php:hover  {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+	
 .image-discussion-php
 {
 	width: 80%;
@@ -94,6 +106,6 @@
 {
 	text-align: center;
     border-style: ridge;
-    margin-top: 5%;
+    margin: 0%;
 }
 

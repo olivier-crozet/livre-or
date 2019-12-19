@@ -24,7 +24,7 @@
   <li>
   <li class="oc-sous"><a href="#">php.sql</a>
     <ul>
-  <li><a class="oc-sous-sous" href="voyage11.html">connexion</a></li>
+  <li><a class="oc-sous-sous" href="projet.php/connexion/">connexion</a></li>
   <li><a class="oc-sous-sous" href="voyage12.html">discussion</a></li>
      </ul>
   </li>
@@ -76,7 +76,7 @@
                       <h1 class="oc-titre-php-index">PHP</h1>
   <section class="oc-section2-index">                 
            <article class="oc-article-connexion-php" >
-                    <img class="image-connexion-php" src="image/connexion.png">
+                    <a href="projet.php/connexion/"><img class="image-connexion-php" src="image/connexion.png"></a>
            </article>
            <article class="oc-article-discussion-php">
                     <img class="image-discussion-php" src="image/discussion.png">

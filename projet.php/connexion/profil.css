@@ -1,0 +1,29 @@
+nav ul
+    {
+    padding: 0px;
+    padding: 0px;
+    list-style-type: none;
+    text-align: center;
+    font-size: 25px;
+    }
+nav li
+      { 
+        display: inline-block;
+        width: 160px;
+        height: 80px;
+        margin:0px;
+        padding:0px;        
+        line-height: 80px;
+      }
+
+nav li :hover
+             {
+              color: red;
+             }
+
+nav li a
+        {
+          display: block;
+          text-decoration: none;
+          color:#FC6E1C;
+        }
