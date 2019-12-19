@@ -1,0 +1,332 @@
+body
+    {
+    background-image:url(image/imageai.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Apple Chancery, cursive;
+    color:white;
+
+    
+    }
+   
+nav ul
+    {
+    padding: 0px;
+    padding: 0px;
+    list-style-type: none;
+    text-align: center;
+    font-size: 25px;
+    }
+nav li
+      { 
+        display: inline-block;
+        width: 160px;
+        height: 80px;
+        margin:0px;
+        padding:0px;        
+        line-height: 80px;
+      }
+
+nav li :hover
+             {
+              color: red;
+             }
+
+nav li a
+        {
+          display: block;
+          text-decoration: none;
+          color:#FC6E1C;
+        }
+
+  section{
+        text-align: center;
+       }
+.titrelogin-index
+    {
+      
+    	text-align: center;
+      color: white;
+      text-shadow: 1px 3px black;
+      margin-bottom: 8%;
+    }
+
+.inputconexion
+{
+  margin: auto;
+  margin-top: 20%;
+}
+.h1inscription
+{
+  text-align: center;
+}
+.tablinscri
+{
+  margin:auto;
+}
+
+
+.div-tableau-connexion
+{
+    width: 119%;
+    margin-left: -7%;
+    background-color: #8fe2fb6e;
+    padding: 1%;
+    height: 300PX;
+    border-radius: 4% 4%;
+}
+.oc-section-index1
+{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+}
+.oc-div-article1
+{
+  padding: 3%;
+}
+.oc-article-actu
+{
+    width: 59%;
+    background-color: #11173187;
+    height: 300px;
+    overflow: overlay;
+}
+.butonconexion
+{
+  border-radius: 40% 40%;
+    background-color: #82df9096;
+    width: 58%;
+    height: 14%;
+    border: gold;
+    box-shadow: #494343 3px 4px;
+    font-family: Apple Chancery, cursive;
+}
+.butonconexion2
+{
+   border-radius: 40% 40%;
+    background-color: #fb3939d4;
+    width: 58%;
+    height: 14%;
+    border: gold;
+    box-shadow: #494343 3px 4px;
+    font-family: Apple Chancery, cursive; 
+}
+
+.er
+{
+  position: absolute;
+    margin-top: 23%;
+    margin-left: -36%;
+}
+.oc-section-index2
+{
+  display: flex;
+  padding-left: 4%;
+}
+.oc-image1-actu
+{
+      width: 31%;
+    border-radius: 10%;
+    height: 288px;
+    margin: auto;
+    padding-left: 1%;
+}
+.oc-div-article2
+{
+      margin: 5%;
+    background-color: #152d50;
+    border-radius: 4% 4% 4% 4%;
+    padding: 2%;
+    margin-right: 1%;
+}
+
+
+/*PARTIE INSCRIPTION*/
+
+.oc-paneaulogin-inscription
+{
+            background-color: red;
+  background-color: #aae9fe4a;
+    width: 34%;
+    padding: 2%;
+    margin: auto;
+}
+.codeerreur
+{
+  font-size: 20px;
+  color:red;
+  position: absolute;
+  margin-left: 1px;
+  margin-top:24%;
+}
+.oc-titreprofil
+{
+  text-align: center;
+}
+.tableconnexionprofil
+{
+  text-align: end;
+  margin: auto;
+}
+
+
+/*PARTI PROFIL*/
+.paneaulogin
+{
+  padding-top: 6%;
+}
+
+.titrelogin
+{
+  margin: 2%;
+  padding-top: 1%;
+  }
+
+.section1-profil
+{
+  background-color: #50ade794;
+  width: 45%;
+  height: 55%;
+  margin: auto;
+}
+.butonconexion-modif
+{
+  color: white;
+   font-size: 21px;
+  border-radius: 40% ;
+    background-color: #f20a189e;
+    width: 41%;
+    height: 13%;
+    border: gold;
+    box-shadow: #494343 3px 4px;
+    font-family: Apple Chancery, cursive;
+}
+
+/* PARTIE  DISCUTION*/
+
+
+.oc-div-zonetext1
+{
+  height: 40%;
+  background-color: #80808099;
+  width: 65%;
+  margin: auto;
+  border: solid gold 2px;
+  overflow: scroll;
+  overflow-x: hidden;
+  word-break: break-word;
+}
+.oc-espacecom
+{
+  margin:auto;
+}
+.titre-discussion
+{
+  text-align: center;
+}
+.envoi-comentaire
+{
+      margin-top: 1%;
+}
+.inputcom
+{
+  margin-top: 1%;
+}
+.form-affichage
+{
+  text-align: left;
+}
+.psedo-affichage
+{
+  color: red;
+  width: 100px;
+  vertical-align: text-top;
+  
+}
+.texttd
+{
+      width: 214px;
+    text-align: left;
+    width: 525PX;
+}
+.taillepse
+{
+  text-transform: uppercase;
+  width: 100px;
+  display: table-footer-group;
+}
+.date-affichage
+{
+  
+    width: 160px;
+    text-align: end;
+}
+.inputcom
+{
+      width: 52%;
+}
+
+.envoi-comentaire
+{
+  font-size: 21px;
+  border-radius: 40% 40%;
+    background-color: #82df90;
+    width: 23%;
+    height: 9%;
+    border: gold;
+    box-shadow: #494343 3px 4px;
+    font-family: Apple Chancery, cursive;
+}
+}
+.buton-inscription
+{
+  font-size: 21px;
+  border-radius: 40% 40%;
+    background-color: #82df90;
+    width: 55%;
+    height: 9%;
+    border: gold;
+    box-shadow: #494343 3px 4px;
+    font-family: Apple Chancery, cursive;
+}
+.tableconnexionprofil  {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  @-webkit-keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+}

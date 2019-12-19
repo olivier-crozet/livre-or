@@ -1,0 +1,56 @@
+
+body
+    {
+    background-color: #91EBDE;
+    font-family:Luminari, fantasy;
+    }
+
+.header
+      {
+      display:inline-block;
+      
+      text-align: center;
+      margin:0;
+      width: 60%;
+      
+      } 
+
+.text
+    {
+    border:solid red 2px;
+    box-shadow: black 2px 4px;
+    margin:0;	
+     
+
+    
+    font-size: 30px;
+    
+     	animation: text 1s;
+     	animation-iteration-count: infinite; 
+    	
+     }
+@keyframes text 
+               {
+               	0% {color:black}
+               	50% {color:red}
+               	100%{color: black}
+    }  
+
+.marteau
+        {
+        margin: 0;
+        }
+.bob
+     {  
+        
+     	float: right;
+     	clear: both;
+     	margin:0;	
+     }    
+.bob2
+     {
+     	float: right;
+     width: 20%;
+     margin-right:20%;
+      transition: 3s;
+     }     

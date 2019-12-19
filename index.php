@@ -11,13 +11,14 @@
 		  <nav class="oc-header">
        <ul class="menu">
   
-  <li class="oc-onglet"><a class="oc-nav-marg" href="voyage.html">accueil</a> </li>
+  <li class="oc-onglet"><a class="oc-nav-marg" href="index.php">accueil</a> </li>
   
   <li class="oc-onglet" class="violet"><a class="oc-nav-marg" href="#">languages</a>
         <ul class="oc-back1">
   <li class="oc-sous"><a href="#">html</a>
     <ul>
-  <li><a class="oc-sous-sous" href="voyage21.html">404</a></li>
+  <li><a class="oc-sous-sous" href="projet.php/404/404.html">404</a></li>
+  <li><a class="oc-sous-sous" href="projet.php/work-in-progress/work-in-progress.html">work in progress</a></li>
   <li><a class="oc-sous-sous" href="voyage22.html">Aplication favorite</a></li>
         </ul>
         </li>
@@ -25,7 +26,7 @@
   <li class="oc-sous"><a href="#">php.sql</a>
     <ul>
   <li><a class="oc-sous-sous" href="projet.php/connexion/">connexion</a></li>
-  <li><a class="oc-sous-sous" href="voyage12.html">discussion</a></li>
+  <li><a class="oc-sous-sous" href="projet.php/discussion/">discussion</a></li>
      </ul>
   </li>
   <li class="oc-sous"><a href="#">olivier</a>
@@ -36,7 +37,7 @@
     </ul>
   </li>
   <li>
-  <li class="oc-onglet"><a class="oc-nav-marg" href="#">livre d'or</a>
+  <li class="oc-onglet"><a class="oc-nav-marg" href="projet.php/work-in-progress/work-in-progress.html">livre d'or</a>
     <ul class="oc-back1">
  <!-- <li class="oc-sous"><a href="voyage21.html">norvège</li></a>
   <li class="oc-sous"><a href="voyage22.html">bénin</li></a>
@@ -48,8 +49,8 @@
       </ul>
   </li>
   </li> 
-  <li class="oc-onglet"><a class="oc-nav-marg" href="voyage2.html">C.V</li></a>
-  <li class="oc-onglet"><a class="oc-nav-marg" href="voyage2.html">contact</li></a>
+  <li class="oc-onglet"><a class="oc-nav-marg" href="projet.php/work-in-progress/work-in-progress.html">C.V</li></a>
+  <li class="oc-onglet"><a class="oc-nav-marg" href="projet.php/work-in-progress/work-in-progress.html">contact</li></a>
   </ul>
   </nav>	
 </header>
@@ -76,15 +77,19 @@
                       <h1 class="oc-titre-php-index">PHP</h1>
   <section class="oc-section2-index">                 
            <article class="oc-article-connexion-php" >
-                    <a href="projet.php/connexion/"><img class="image-connexion-php" src="image/connexion.png"></a>
+                    <a href="projet.php/connexion/"><img class="effet" id="image-connexion-php" src="image/connexion.png"></a>
            </article>
            <article class="oc-article-discussion-php">
-                    <img class="image-discussion-php" src="image/discussion.png">
+                    <a href="projet.php/discussion/"><img class="effet" id="image-discussion-php" src="image/discussion.png"></a>
            </article>
   </section>
-  <section>
+ 
                    <h1 class="oc-titre-html">HTML/CSS</h1>
-           <article>
-                   <img class="">
+ <section class="oc-section2-index" id="section-index">                
+           <article class="oc-article-discussion-php">
+                   <a href="projet.php/404/404.html"><img class="effet" id="oc-404-html" src="image/404.png"></a>
+           </article>
+           <article class="oc-article-discussion-php">
+                  <a href="projet.php/work-in-progress/work-in-progress.html"><img class="effet" id="oc-work-in-progress" src="image/work-in-progress.png"></a>
            </article>
   </section>
