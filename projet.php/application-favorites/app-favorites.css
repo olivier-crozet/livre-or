@@ -1,0 +1,261 @@
+body
+    {
+    margin-top:;
+    background-image: url(triangle.jpg);
+    background-image: no-repeat;
+    background-size: cover;
+    color:white;
+    background-position: center;
+    }
+header
+    {
+     background:pink;
+     position:relative;
+     margin-bottom: 5%;
+     
+     font-family: Jazz LET, fantasy;
+      position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 5s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+
+     }
+h1
+    {
+    text-align: center;
+    font size:25px;
+    }
+.doubleappli
+   {
+    
+   	margin-top: 5%;
+    height: 40%;
+   	margin: 0 auto;
+   }
+.logwin
+        {
+        	width: 8%;
+        	   	margin: 0 auto;
+           animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari et Chrome */
+   
+}
+
+.logwin:hover {
+	-webkit-transform: scale(2.3);
+	transform: scale(2.3);
+   
+
+         }
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* sur Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* sur Safari et Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* sur Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+           -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+
+}
+.doubleappli2
+             {   
+             	    ;
+                 	margin: 0 auto;
+                 	
+             }
+.sec
+             {  
+                align-items: center;	
+                text-align: center;
+             	display: flex;
+              
+             }
+.logmatch
+          {
+          	width: 8%;
+        animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari et Chrome */
+   
+}
+
+.logmatch:hover {
+	-webkit-transform: scale(2.3);
+	transform: scale(2.3);
+   
+
+         }
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* sur Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* sur Safari et Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* sur Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+           -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+
+}
+.lingo
+       {
+        margin-top:11%;
+        
+        text-align: center;
+        margin:auto;
+        
+
+       }
+.imglingo
+         {
+          
+          width: 5%;
+          margin: 0 auto;
+
+         animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari et Chrome */
+   
+}
+
+    .imglingo:hover {
+	-webkit-transform: scale(2.3);
+	transform: scale(2.3);
+   
+
+         }
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* sur Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* sur Safari et Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* sur Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+           -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+
+}
+
+h2
+  {
+  	margin-top: 0;
+  	font-size:30px;
+  	margin:auto;
+  }
+p
+ {
+  font-size: 18px;
+ }
+.lingo
+      {
+       margin:auto;
+       text-align: center;
+       margin-top: 10%;
+      }
+
+
+
+
+

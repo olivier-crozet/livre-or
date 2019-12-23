@@ -19,7 +19,10 @@
     <ul>
   <li><a class="oc-sous-sous" href="projet.php/404/404.html">404</a></li>
   <li><a class="oc-sous-sous" href="projet.php/work-in-progress/work-in-progress.html">work in progress</a></li>
-  <li><a class="oc-sous-sous" href="voyage22.html">Aplication favorite</a></li>
+  <li><a class="oc-sous-sous" href="projet.php/btp/accueil.html">btp</a></li>
+  <li><a class="oc-sous-sous" href="projet.php/application-favorites/app-favorites.html">application favorites</a></li>
+  <li><a class="oc-sous-sous" href="projet.php/voyages/voyages.html">voyages</a></li>
+  <li><a class="oc-sous-sous" href="projet.php/botanique/accueil.html">botanique</a></li>
         </ul>
         </li>
   <li>
@@ -29,10 +32,10 @@
   <li><a class="oc-sous-sous" href="projet.php/discussion/">discussion</a></li>
      </ul>
   </li>
-  <li class="oc-sous"><a href="#">olivier</a>
+  <li class="oc-sous"><a href="#">java script</a>
      <ul>
-  <li><a class="oc-sous-sous" href="voyage31.html">la dominique</a></li>
-  <li><a class="oc-sous-sous" href="voyage32.html">turquie</a></li>
+  <li><a class="oc-sous-sous" href="voyage31.html"></a></li>
+  <li><a class="oc-sous-sous" href="voyage32.html"></a></li>
     </ul>
     </ul>
   </li>
@@ -49,7 +52,7 @@
       </ul>
   </li>
   </li> 
-  <li class="oc-onglet"><a class="oc-nav-marg" href="projet.php/work-in-progress/work-in-progress.html">C.V</li></a>
+  <li class="oc-onglet"><a class="oc-nav-marg" href="projet.php/cv/cvolivier.html">C.V</li></a>
   <li class="oc-onglet"><a class="oc-nav-marg" href="projet.php/work-in-progress/work-in-progress.html">contact</li></a>
   </ul>
   </nav>	
@@ -75,21 +78,42 @@
 </div>
                       <!--partie php-->
                       <h1 class="oc-titre-php-index">PHP</h1>
-  <section class="oc-section2-index">                 
+  <section class="oc-section2-index">  
+      <div class="oc-div-php1">   
            <article class="oc-article-connexion-php" >
                     <a href="projet.php/connexion/"><img class="effet" id="image-connexion-php" src="image/connexion.png"></a>
            </article>
            <article class="oc-article-discussion-php">
                     <a href="projet.php/discussion/"><img class="effet" id="image-discussion-php" src="image/discussion.png"></a>
            </article>
+      </div>
   </section>
  
                    <h1 class="oc-titre-html">HTML/CSS</h1>
- <section class="oc-section2-index" id="section-index">                
+ <section class="oc-section2-index" id="section-index"> 
+      <div class="oc-div-html">  
            <article class="oc-article-discussion-php">
                    <a href="projet.php/404/404.html"><img class="effet" id="oc-404-html" src="image/404.png"></a>
            </article>
            <article class="oc-article-discussion-php">
                   <a href="projet.php/work-in-progress/work-in-progress.html"><img class="effet" id="oc-work-in-progress" src="image/work-in-progress.png"></a>
            </article>
+           <article class="oc-article-discussion-php" >
+             <a href="projet.php/btp/accueil.html"><img class="effet" id="oc-btp" src="image/btp.png"></a>
+           </article>
+           
+    </div>
+  <!--LIGNE2 HTML-->
+    <div class="oc-div-html" >
+           <article class="oc-article-discussion-php" >
+             <a href="projet.php/application-favorites/app-favorites.html"><img class="effet" id="app" src="image/app-favorites.png"></a>
+           </article>
+           <article class="oc-article-discussion-php" >
+             <a href="projet.php/voyages/voyages.html"><img class="effet" id="voyages" src="image/voyages.png"></a>
+           </article>
+           <article class="oc-article-discussion-php" >
+             <a href="projet.php/botanique/accueil.html"><img class="effet" id="agenda" src="image/botanique.png"></a>
+           </article>
+
+   </div>      
   </section>

@@ -1,0 +1,428 @@
+body
+    {
+      margin: -1%;
+    }
+.ocbodyacceuil
+             {
+              background-image: url(fond.png);
+              background-size: 100%;
+             }
+
+nav ul
+    {
+    padding: 0px;
+    padding: 0px;
+    list-style-type: none;
+    text-align: center;
+
+    }
+nav li
+      { 
+      	display: inline-block;
+      	width: 160px;
+      	height: 50px;
+      	margin:0px;
+      	padding:0px;      	
+      	line-height: 50px;
+      }
+
+nav li :hover
+             {
+              color: white;
+             }
+
+nav li a
+        {
+        	display: block;
+        	text-decoration: none;
+        	color:pink;
+        }
+
+
+
+            /*non commun*/
+
+.octitreacceuil
+                {
+                  color:pink;
+                  display: inline-flex;
+                }
+
+.octitreac
+           {
+            display: flex;
+            flex-direction: row;
+            width: 300px;
+            margin: auto;
+            font-size: 45px;
+            margin-top: 10%;
+            margin-bottom: 10%;
+           }
+.ochead
+        {
+         margin-top: 2%;
+         
+        }
+
+     /*partie presentation*/
+
+.ocsctpresentation1
+                   {
+                    display: flex;
+                    flex-direction: column;
+                   }
+.ocbackgroundpresentation
+                         {
+                          background-image: url(ocfotopresentation3.jpg);
+                          background-repeat:no-repeat;
+                          background-size: cover;
+                         }
+.ocartpresentation1                         
+                    {
+                      color: white;
+                      text-align: center;
+                      width: 70%;
+                      height: 50vh;
+                      display: inline-block;
+                      margin: auto;
+                      margin-top: 5%;
+                      font-family: "Montserrat-Regular";
+                    }
+.ocartpresentation2
+                    {
+                     display: flex;
+                      flex-direction: column;
+                      background-color: white;
+                      justify-content: center;
+                      text-align: center;
+                      font-family: "Montserrat-SemiBold";
+                    }
+.ocparagraphe2
+              {
+                width: 70%;
+                margin:auto;
+                margin-top: 5%;
+              }
+.ocartpresentation3
+                    {
+                      display: flex;
+                      flex-direction: row;
+                      text-align: center;
+                      justify-content: center;
+                      margin-bottom: 5%;
+                    }
+.ocparagraphe3
+              {
+                width: 50%;
+              }
+.ocfotopresentation2
+                    {
+                      width: 40%;
+
+                    }
+html {
+      margin: 0;
+    }
+
+body {
+      margin: 0;
+    }
+
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url("Montserrat-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("Montserrat-Regular.ttf") format("truetype");
+}
+.och1presentation
+                {
+                  font-family: "Montserrat-SemiBold";
+                  font-size: 30px;
+
+                }
+
+.ocbodyaccueil {
+              background-image: url(fond.png);
+              background-size: 100%;
+             }
+
+/*HEADER*/
+
+.ochead {
+         height: 10vh;
+         
+        }
+
+
+
+
+
+/*SECTION CENTRALE*/
+
+.jl-titredusite {
+  color: #FFFFFF;
+  font-family: "Montserrat-SemiBold";
+  font-size: 50px;
+}
+
+.jl-titredusite2 {
+  color: pink;
+  font-family: "Montserrat-SemiBold";
+  font-size: 50px;
+}
+
+
+.octitreac {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            font-size: 45px;
+            height: 65vh;
+           }
+
+
+
+.oc-body-arbuste
+                {
+                 background-color: pink;
+                 margin: -2%;
+                 
+                }
+.oc-backgroud1
+              {
+                background-image: url(oc-arbuste-background.jpg);
+                padding-top: 3%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin:0px;
+              }
+.oc-h1-arbuste
+              { 
+                text-align: center;
+                color: white;
+                margin-top: 5%;
+                margin-bottom: 5%;
+                color: white;
+    font-size: 35px;
+    font-family: "ubuntu";
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Montserrat-SemiBold";
+    background: linear-gradient(to right, pink 10%, #D858A2 50%, white 60%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2.5s linear infinite;
+    
+              }
+              @keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.oc-section-arbustes1
+                     {
+                      display: flex;
+                      flex-direction: column;
+                      width: 70%;
+                      margin: auto;
+                      color: white;
+                      text-align: center;
+
+                     }
+.oc-article-arbustre1
+                     {
+                      display: flex;
+                      flex-direction: row;
+                      width: 90%;
+                      margin-bottom: 10%;
+                        font-family: "Montserrat-Regular";
+                     }
+
+
+.oc-foto-arbuste1
+                  { margin-top: 25%;
+                    height: 250px;
+                    margin-left: 20%;
+                    margin-bottom: 0%;
+                    width: 200px;
+                    -webkit-transform: scale(1);
+                  transform: scale(1);
+                  -webkit-transition: .3s ease-in-out;
+                  transition: .3s ease-in-out;
+                    }
+.oc-foto-arbuste1:hover 
+                       {
+                     -webkit-transform: scale(2.3);
+                     transform: scale(2.3);
+                       }
+ 
+
+.oc-article-arbustre2
+                     {
+                      text-align: center;
+                      width: 70%;
+                      display: flex;
+                      align-items: center;
+                      margin: auto;                   
+                        height: 350px;
+                        font-family: "Montserrat-SemiBold";       
+                     }
+.oc-paragraphe-arbuste
+                     {
+                      margin: 0px;
+                     }
+
+
+
+
+  /*partie legumes */
+
+.oc-body-légumes
+                {
+                 margin: -2%;
+                }
+.oc-h1-légumes
+               {
+                color: white;
+                text-align:center;
+                margin-top: 5%;
+                font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Montserrat-SemiBold";
+    background: linear-gradient(to right, pink 10%, #D858A2 50%, white 60%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2.5s linear infinite;
+    
+              }
+              @keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.oc-backgroud-légumes1
+                      { 
+                        padding: 3%;
+                        background-image: url(salade.jpg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        height: 350px;
+                      }
+.oc-backdround-légumes2
+                       {
+                        background-image: url(oc-légumes.jpg);
+                        height: 350px;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                       }
+.oc-foto-legumes
+                {
+                  height: 150px;
+                    }
+
+.oc-foto-legumes:hover 
+                       {
+                     -webkit-transform: scale(2.3);
+                     transform: scale(2.3);
+                       }
+.oc-article-legumes
+                   {
+                     font-family: "Montserrat-SemiBold";
+                    display: flex;
+                    width: 70%;
+                    background-color:white;
+                    margin: auto;
+                    height: 250px;
+                    position:relative;
+                    align-items: center;
+                    margin-top: 70px;
+                    padding:2%;
+                        -webkit-transform: scale(1);
+                  transform: scale(1);
+                  -webkit-transition: .3s ease-in-out;
+                  transition: .3s ease-in-out;
+                    }
+
+  /*footer commun*/
+
+
+/*FOOTER*/
+
+footer {
+          background-color: #191919;
+        }
+
+
+.jl-lien {
+ 
+  text-decoration: none;
+  color: white;
+}
+
+.jl-lien:hover {
+ 
+  text-decoration: none;
+  color: pink;
+}
+
+.jl-menu-navigation {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 25vh;
+  padding-top: 10px;
+  justify-content: space-evenly;
+}
+
+.jl-container {
+  display: flex;
+  flex-direction : column;
+}
+
+.jl-columns {
+  display: flex;
+  flex-direction : row;
+}
+
+.jl-menu {
+  color: white;
+  margin-left: 35px;
+  font-family: "Montserrat-SemiBold";
+}
+
+.jl-nav2 {
+  margin: 0;
+  text-decoration: none;
+  color: white;
+  list-style: none;
+  font-family: "Montserrat-Regular";
+  font-size: 14px;
+}
+
+.jl-nav3 {
+   margin: 0;
+   text-decoration: none;
+   color: white;
+   list-style: none;
+   font-family: "Montserrat-Regular";
+   font-size: 14px;
+}

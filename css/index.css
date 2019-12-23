@@ -12,7 +12,7 @@
   padding-left: 0%;
   padding-right: 0%;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-attachment: fixed;
 }
 .oc-presentation-index
@@ -62,9 +62,14 @@
 .oc-section2-index
 {
 	display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: #4fc9e994;
     padding: 3%;
+}
+.oc-div-php1
+{
+  display: flex;
+  flex-direction: row;
 }
 .oc-article-connexion-php
 {
@@ -104,6 +109,19 @@
 	width: 80%;
 	box-shadow: 3px 2px #00000091;
 }
+/*PARTIE HTML*/
+.oc-section3-index
+{
+display: flex;
+flex-direction: column;
+}
+.oc-div-html
+{
+  display: flex;
+  flex-direction: row;
+  margin-top: 2%;
+
+}
 .oc-titre-html
 {
 	text-align: center;
@@ -119,7 +137,7 @@
 {
 background-image: url(../image/code3.jpg);
  background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-attachment: fixed;
 }
 #oc-work-in-progress
@@ -127,4 +145,23 @@ background-image: url(../image/code3.jpg);
 	width: 80%;
 	box-shadow: 3px 2px #00000091;
 }
-
+#oc-btp
+{
+  width: 80%;
+  box-shadow: 3px 2px #00000091;
+}
+#app
+{
+  width: 80%;
+  box-shadow: 3px 2px #00000091;
+}
+#voyages
+{
+   width: 80%;
+  box-shadow: 3px 2px #00000091; 
+}
+#agenda
+{
+  width: 80%;
+  box-shadow: 3px 2px #00000091;
+}
