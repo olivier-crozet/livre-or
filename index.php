@@ -40,7 +40,7 @@
     </ul>
   </li>
   <li>
-  <li class="oc-onglet"><a class="oc-nav-marg" href="projet.php/work-in-progress/work-in-progress.html">livre d'or</a>
+  <li class="oc-onglet"><a class="oc-nav-marg" href="livre-or.php">livre d'or</a>
     <ul class="oc-back1">
  <!-- <li class="oc-sous"><a href="voyage21.html">norvège</li></a>
   <li class="oc-sous"><a href="voyage22.html">bénin</li></a>
