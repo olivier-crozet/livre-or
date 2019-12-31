@@ -3,6 +3,12 @@
 	text-align:center;
 	padding-top: 5%;
 }
+.section-livreor-1
+{
+	display: flex;
+	flex-direction: row-reverse;
+}
+/* PARTIE CONNEXION */
 .article-connexion
 {
 	background-color: #7cd3d587;
@@ -23,4 +29,17 @@
 {
 	width: 15%;
 
+}
+/*FIN DE PARIE CONNEXION
+    DEBUT PROFIL */
+.article-profil
+{
+	background-color:#0b5cc0ad;
+	width: 39%;
+    text-align: center;
+    padding: 2%;
+}
+.liens-vers-modif
+{
+ margin-top: 10%;
 }

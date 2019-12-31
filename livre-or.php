@@ -105,11 +105,9 @@ $erreur="<p class='codeerreur'>vous n'etes pas connecté !";
   }
   else
     $erreur = "champ vide";
-
-
 ?>
-
-<section>
+<!--ARTICLE CONEXION -->
+<section class="section-livreor-1">
   <article class="article-connexion">
     <h2><?php if (isset($_SESSION['id'])) 
     {
@@ -145,6 +143,22 @@ $erreur="<p class='codeerreur'>vous n'etes pas connecté !";
           <a href="inscription.php"><p>inscrivez vous !</p></a>
         </div>
      </form>
+ </article>
+ <article class="article-profil" >
+   <h2><?php if (isset($_SESSION['id'])) 
+    {
+      echo "connecté"." "."!"."<br/>";
+      echo "Profil"." "."de"." ".$_SESSION['login'] ;
+    }
+    else
+      echo "connectez vous !";
+     ?></h2>
+<?php
+if (isset($_SESSION['id']))
+ {
+   echo  "<a href=\"modif-profil.php\">"."<p class=\"liens-vers-modif\">"."modifier mon profil !"."</p>"."</a>";
+}
+?>     
  </article>
 </section>
 
@@ -196,7 +210,7 @@ endforeach ;
            <br/>
                 <input class="envoi-comentaire" type="submit" name="envoicomentaire" value="deposé le message :">
 
-
+                <!--PARTI ERREUR-->
 <?php
 if (isset($erreur))
      {
