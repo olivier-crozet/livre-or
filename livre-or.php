@@ -1,7 +1,8 @@
 <?php
 session_start();
 $connexion = mysqli_connect("localhost","root","","livreor");
-if (!empty($_POST['formdeconexion'])) 
+
+if (!empty($_POST['envoideconnexion'])) 
     {     
     unset ( $_SESSION ['id'] );
     unset ($_SESSION['login']); 
@@ -68,15 +69,16 @@ $erreur="<p class='codeerreur'>vous n'etes pas connecté !";
   </ul>
   </nav>	
 </header>
-  <!--FIN DU HEADER -->
+  <!--FIN DU HEADER
+      DEBUT DE LA CONNEXION  -->
    
    <h1 class="titre-livreor">Livre d'or</h1>
 
 <?php
-  $bdd = new PDO('mysql:host=127.0.0.1;dbname=discussion','root','');
-  if (isset($_POST['envoi-connexion']))
+  $bdd = new PDO('mysql:host=127.0.0.1;dbname=livreor','root','');
+  if (isset($_POST['envoiconnexion']))
    { 
-    $loginconexion = htmlspecialchars($_POST['login']);
+    $loginconexion = htmlspecialchars($_POST['password']);
     $passwordconexion =sha1($_POST['password']);
       if (!empty($_POST['login']) && !empty($_POST['password']) )
       {
@@ -89,7 +91,7 @@ $erreur="<p class='codeerreur'>vous n'etes pas connecté !";
             session_start();
             $_SESSION['id'] = $userinfo['id'];
             $_SESSION['login'] = $userinfo['login'];
-                header("location: livre-or.php");
+                header("location: livre-or.php?id=".$_SESSION['id']);
             }
           else
           {
@@ -109,7 +111,13 @@ $erreur="<p class='codeerreur'>vous n'etes pas connecté !";
 
 <section>
   <article class="article-connexion">
-    <h2>Connecté vous !</h2>
+    <h2><?php if (isset($_SESSION['id'])) 
+    {
+      echo $_SESSION['login']." "."conecté"." "."!" ;
+    }
+    else
+      echo "connectez vous !";
+     ?></h2>
      <form class="form-connexion" method="POST" action="livre-or.php">
          <table>
            <tr>
@@ -122,24 +130,26 @@ $erreur="<p class='codeerreur'>vous n'etes pas connecté !";
           </tr>
           <tr>
             <td>
-              <label class="mdp"  for="mdp">mot de passe :</label>
+              <label class="mdp"  for="password">mot de passe :</label>
             </td>
             <td>
-              <input class="mdp" type="password" name="mdp" ><!--php pour laisser le text dans l'input-->
+              <input class="mdp" type="password" name="password" ><!--php pour laisser le text dans l'input-->
             </td>
           </tr>
         </table> 
         <br/>
-                <input class="envoi-connexion" type="submit" name="envoiconnexion" value="connexion">   
+                <input class="envoi-connexion" type="submit" name="envoiconnexion" value="connexion">
+        <br/>
+                <input class="envoi-deconnexion" type="submit" name="envoideconnexion" value="déconnexion">   
         <div>
           <a href="inscription.php"><p>inscrivez vous !</p></a>
         </div>
-
+     </form>
  </article>
 </section>
 
 
-
+<!--FIN DE LA CONNEXION -->
 
 
    <!-- partie affichege livre-or -->
@@ -170,7 +180,24 @@ $req_jointe = "SELECT  login,  message, date FROM utilisateurs LEFT JOIN message
                       }// } 
          }
 endforeach ;
+?>
+  <table>
+    <form class="form-connexion" method="POST" action="livre-or.php">
+          <tr>
+            <td>
+              <label class="inputcom"  for="entrecom">commentaire :</label>
+        </td>
+        <td>
+              <input class="inputcom" type="text" name="entrecom" ><!--php pour laisser le text dans l'input-->
+            </td>
+          </tr>
+    </form>
+      </table>
+           <br/>
+                <input class="envoi-comentaire" type="submit" name="envoicomentaire" value="deposé le message :">
 
+
+<?php
 if (isset($erreur))
      {
       echo "<strong>".'<font size= "5px" color="red">'.$erreur.'</font>'."</strong>";
