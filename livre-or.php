@@ -104,7 +104,7 @@ $erreur="<p class='codeerreur'>vous n'etes pas connecté !";
       } 
   }
   else
-    $erreur = "champ vide";
+    $erreur = "";
 ?>
 <!--ARTICLE CONEXION -->
 <section class="section-livreor-1">
@@ -159,9 +159,16 @@ if (isset($_SESSION['id']))
    echo  "<a href=\"modif-profil.php\">"."<p class=\"liens-vers-modif\">"."modifier mon profil !"."</p>"."</a>";
 }
 ?>     
+               <!--PARTI ERREUR-->
+<?php
+if (isset($erreur))
+     {
+      echo "<strong>".'<font size= "5px" color="red">'.$erreur.'</font>'."</strong>";
+    }
+         ?> 
  </article>
 </section>
-
+<section class="section-com">
 
 <!--FIN DE LA CONNEXION --> <!--PARTIE ECRIRE COMMENTAIRE -->
   <form class="form-connexion" method="POST" action="livre-or.php">
@@ -185,7 +192,7 @@ if (isset($_SESSION['id']))
         }
         else
         {
-        $erreur="champ vide";
+        
           }             
   }
   else
@@ -206,9 +213,9 @@ if (isset($_SESSION['id']))
            <br/>
                 <input class="envoi-comentaire" type="submit" name="envoicomentaire" value="deposé le message">
 
-
+</section>
    <!-- partie affichege livre-or -->
-
+<section class="section-zoneaffichage">
   <?php
   if (isset($_SESSION['login'])) {
     $login=$_SESSION['login'];
@@ -216,7 +223,7 @@ if (isset($_SESSION['id']))
   }
 $req_jointe = "SELECT  login,  commentaire, date FROM utilisateurs LEFT JOIN commentaires ON utilisateurs.id = commentaires.id_utilisateur ORDER BY `date`  DESC LIMIT 35";
   $req_jointe_bdd = mysqli_query($connexion,$req_jointe);
-var_dump($req_jointe_bdd);
+
     $row = mysqli_fetch_all($req_jointe_bdd);
 
    // $req_jointe = "SELECT  login,  message, date FROM utilisateurs LEFT JOIN messages ON utilisateurs.id = messages.id_utilisateur ORDER BY `date`  DESC LIMIT 35";
@@ -225,7 +232,7 @@ var_dump($req_jointe_bdd);
     //$row = mysqli_fetch_all($req_jointe_bdd);
  ?>
                      <!--AFFICHE DE LA DATA BASE-->
-       <table>        
+       <table class="table-affichage">        
       <?php 
 
 
@@ -246,14 +253,8 @@ var_dump($req_jointe_bdd);
          }
 endforeach ;
 ?>
+</section>
 
-
-                <!--PARTI ERREUR-->
-<?php
-if (isset($erreur))
-     {
-      echo "<strong>".'<font size= "5px" color="red">'.$erreur.'</font>'."</strong>";
-    }
-         ?> 
+ 
 </body>
 </html>

@@ -7,6 +7,7 @@
 {
 	display: flex;
 	flex-direction: row-reverse;
+	margin-bottom: 2%;
 }
 /* PARTIE CONNEXION */
 .article-connexion
@@ -42,4 +43,26 @@
 .liens-vers-modif
 {
  margin-top: 10%;
+}
+/*PARTIE COM */
+.section-com
+{
+margin-bottom: 2%;
+}
+
+/*PARTIE AFFICHAGE COMMENTAIRE*/ 
+.section-zoneaffichage
+{
+	background-image: url(../image/carte-a-puces.jpg); 
+	color: #30ff2d;
+    text-align: left;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.table-affichage
+{
+	margin: auto;
+    width: 60%;
+    background-color: #0000ffba;
+    border: solid #c8c8c8 10px;
 }
