@@ -165,12 +165,59 @@ if (isset($_SESSION['id']))
 
 <!--FIN DE LA CONNEXION -->
 
+  <!--PARTIE ECRIRE COMMENTAIRE -->
+  <form class="form-connexion" method="POST" action="livre-or.php">
+  <table>
+
+      <?php                 
+if (isset($_SESSION['id'])) 
+{        
+  if (isset($_POST["envoicomentaire"]))
+   {
+    echo "string";
+
+              $bouton=htmlspecialchars($_POST['entrecom']);
+
+        if (!empty($_POST["entrecom"]))     
+        {   
+          $id_user = $_SESSION['id'];
+                              //requete d'insertion
+          $reqcom="INSERT INTO commentaires(commentaire,id_utilisateur,date) VALUES (\"$bouton\",\"$id_user\",NOW())";
+          $lecom = mysqli_query($connexion, $reqcom);
+          header("location: livre-or.php"); 
+          var_dump($lecom)  ;      
+        }
+        else
+        {
+        $erreur="champ vide";
+          }             
+  }
+  else
+  {}
+  unset($bouton);
+}
+?>
+    
+
+          <tr>
+            <td>
+              <label class="inputcom"  for="entrecom">commentaire :</label>
+        </td>
+        <td>
+              <input class="inputcom" type="text" name="entrecom" ><!--php pour laisser le text dans l'input-->
+            </td>
+          </tr>
+    </form>
+      </table>
+           <br/>
+                <input class="envoi-comentaire" type="submit" name="envoicomentaire" value="deposé le message">
+
 
    <!-- partie affichege livre-or -->
 
   <?php
 
-$req_jointe = "SELECT  login,  message, date FROM utilisateurs LEFT JOIN messages ON utilisateurs.id = messages.id_utilisateur ORDER BY `date`  DESC LIMIT 35";
+$req_jointe = "SELECT  login,  commentaire, date FROM utilisateurs LEFT JOIN commentaires ON utilisateurs.id = messages.id_utilisateur ORDER BY `date`  DESC LIMIT 35";
   $req_jointe_bdd = mysqli_query($connexion,$req_jointe);
 
     $row = mysqli_fetch_all($req_jointe_bdd);
@@ -195,20 +242,7 @@ $req_jointe = "SELECT  login,  message, date FROM utilisateurs LEFT JOIN message
          }
 endforeach ;
 ?>
-  <table>
-    <form class="form-connexion" method="POST" action="livre-or.php">
-          <tr>
-            <td>
-              <label class="inputcom"  for="entrecom">commentaire :</label>
-        </td>
-        <td>
-              <input class="inputcom" type="text" name="entrecom" ><!--php pour laisser le text dans l'input-->
-            </td>
-          </tr>
-    </form>
-      </table>
-           <br/>
-                <input class="envoi-comentaire" type="submit" name="envoicomentaire" value="deposé le message :">
+
 
                 <!--PARTI ERREUR-->
 <?php
