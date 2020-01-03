@@ -1,7 +1,7 @@
 <?php
 session_start();
 $connexion = mysqli_connect("localhost","root","","livreor");
-$login=$_SESSION['login'];
+
 if (!empty($_POST['envoideconnexion'])) 
     {     
     unset ( $_SESSION ['id'] );
@@ -210,7 +210,10 @@ if (isset($_SESSION['id']))
    <!-- partie affichege livre-or -->
 
   <?php
+  if (isset($_SESSION['login'])) {
+    $login=$_SESSION['login'];
 
+  }
 $req_jointe = "SELECT  login,  commentaire, date FROM utilisateurs LEFT JOIN commentaires ON utilisateurs.id = commentaires.id_utilisateur ORDER BY `date`  DESC LIMIT 35";
   $req_jointe_bdd = mysqli_query($connexion,$req_jointe);
 var_dump($req_jointe_bdd);
@@ -224,12 +227,14 @@ var_dump($req_jointe_bdd);
                      <!--AFFICHE DE LA DATA BASE-->
        <table>        
       <?php 
+
+
       foreach ( $row as $key ):
       {
         if (!empty($key[1]))
             
           # code...
-            if ($login == $key[0]) 
+            if (isset($login) == $key[0]) 
         //  echo "<strong>".'<font size= "5px" color="red">'.$key.'</font>'."</strong>";
                   {
                     echo "<tr class=\"psedo-affichage\"><td class=\"taillepse\" >".$key[0].":"."</td>"."<td class=\"texttd\" >".$key[1]."</td>"."<td class=\"date-affichage\">".$key[2]."<td>"."</tr>";
