@@ -78,7 +78,7 @@ $erreur="<p class='codeerreur'>vous n'etes pas connecté !";
   $bdd = new PDO('mysql:host=127.0.0.1;dbname=livreor','root','');
   if (isset($_POST['envoiconnexion']))
    { 
-    $loginconexion = htmlspecialchars($_POST['password']);
+    $loginconexion = htmlspecialchars($_POST['login']);
     $passwordconexion =sha1($_POST['password']);
       if (!empty($_POST['login']) && !empty($_POST['password']) )
       {
@@ -95,7 +95,7 @@ $erreur="<p class='codeerreur'>vous n'etes pas connecté !";
             }
           else
           {
-          $erreur = "<br/>mauvais psedo ou mauvais mot de passe !";
+          $erreur = "<br/>mauvais pseudo ou mauvais mot de passe !";
           }
           }
       else
