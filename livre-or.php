@@ -1,13 +1,38 @@
 <?php
 session_start();
 $connexion = mysqli_connect("localhost","root","","livreor");
-
+  
 if (!empty($_POST['envoideconnexion'])) 
     {     
     unset ( $_SESSION ['id'] );
     unset ($_SESSION['login']); 
 $erreur="<p class='codeerreur'>vous n'etes pas connecté !";
     }
+?>
+
+<?php                 
+if (isset($_SESSION['id'])) 
+{        
+  if (isset($_POST["envoicomentaire"]))
+   {
+              $bouton=htmlspecialchars($_POST['entrecom']);
+
+        if (!empty($_POST["entrecom"]))     
+        {   
+          $id_user = $_SESSION['id'];
+                              //requete d'insertion
+          $reqcom="INSERT INTO commentaires(commentaire,id_utilisateur,date) VALUES (\"$bouton\",\"$id_user\",NOW())";
+          $lecom = mysqli_query($connexion, $reqcom);
+         
+              
+
+             
+
+        }
+             header('Location: livre-or.php');       
+  }
+  unset($bouton);
+}
 ?>
 
 <!DOCTYPE html>
@@ -115,7 +140,7 @@ $erreur="<p class='codeerreur'>vous n'etes pas connecté !";
     }
     else
       echo "connectez vous !";
-     ?></h2>
+?> </h2>
      <form class="form-connexion" method="POST" action="livre-or.php">
          <table>
            <tr>
@@ -145,61 +170,39 @@ $erreur="<p class='codeerreur'>vous n'etes pas connecté !";
      </form>
  </article>
  <article class="article-profil" >
-   <h2><?php if (isset($_SESSION['id'])) 
+   <h2><?php if(isset($_SESSION['id'])) 
     {
       echo "connecté"." "."!"."<br/>";
       echo "Profil"." "."de"." ".$_SESSION['login'] ;
     }
     else
+    {
       echo "connectez vous !";
-     ?></h2>
+    }
+?> </h2>
 <?php
-if (isset($_SESSION['id']))
+if(isset($_SESSION['id']))
  {
    echo  "<a href=\"modif-profil.php\">"."<p class=\"liens-vers-modif\">"."modifier mon profil !"."</p>"."</a>";
 }
-?>     
+
+
+
+
+
+
+ ?>     
                <!--PARTI ERREUR-->
-<?php
-if (isset($erreur))
-     {
-      echo "<strong>".'<font size= "5px" color="red">'.$erreur.'</font>'."</strong>";
-    }
-         ?> 
+
  </article>
 </section>
 <section class="section-com">
 
 <!--FIN DE LA CONNEXION --> <!--PARTIE ECRIRE COMMENTAIRE -->
-  <form class="form-connexion" method="POST" action="livre-or.php">
+  <form class="form-connexion" method="POST" >
   <table>
 
-      <?php                 
-if (isset($_SESSION['id'])) 
-{        
-  if (isset($_POST["envoicomentaire"]))
-   {
-              $bouton=htmlspecialchars($_POST['entrecom']);
 
-        if (!empty($_POST["entrecom"]))     
-        {   
-          $id_user = $_SESSION['id'];
-                              //requete d'insertion
-          $reqcom="INSERT INTO commentaires(commentaire,id_utilisateur,date) VALUES (\"$bouton\",\"$id_user\",NOW())";
-          $lecom = mysqli_query($connexion, $reqcom);
-          header("location: livre-or.php"); 
-          var_dump($lecom)  ;      
-        }
-        else
-        {
-        
-          }             
-  }
-  else
-  {}
-  unset($bouton);
-}
-?>
           <tr>
             <td>
               <label class="inputcom"  for="entrecom">commentaire :</label>
@@ -216,7 +219,7 @@ if (isset($_SESSION['id']))
 </section>
    <!-- partie affichege livre-or -->
 <section class="section-zoneaffichage">
-  <?php
+<?php
   if (isset($_SESSION['login'])) {
     $login=$_SESSION['login'];
 
@@ -230,7 +233,7 @@ $req_jointe = "SELECT  login,  commentaire, date FROM utilisateurs LEFT JOIN com
   //$req_jointe_bdd = mysqli_query($connexion,$req_jointe);
 
     //$row = mysqli_fetch_all($req_jointe_bdd);
- ?>
+?>
                      <!--AFFICHE DE LA DATA BASE-->
        <table class="table-affichage">        
       <?php 
@@ -253,6 +256,12 @@ $req_jointe = "SELECT  login,  commentaire, date FROM utilisateurs LEFT JOIN com
          }
 endforeach ;
 ?>
+<?php
+if (isset($erreur))
+     {
+      echo "<strong>".'<font size= "5px" color="red">'.$erreur.'</font>'."</strong>";
+    }
+?> 
 </section>
 
  
