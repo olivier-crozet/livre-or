@@ -58,11 +58,31 @@ margin-bottom: 2%;
     text-align: left;
     padding-top: 2%;
     padding-bottom: 2%;
+    background-attachment: fixed;
+
 }
 .table-affichage
 {
-	margin: auto;
-    width: 60%;
-    background-color: #0000ffba;
-    border: solid #c8c8c8 10px;
+display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border: solid;
+    border-radius: 20px;
+    background-color: rgba(5, 78, 222, 0.75);
+    height: 600px;
+    max-width: 630px;
+    overflow-y: scroll;
+    margin: auto;
+    margin-top: 4%;
+}
+.div-affichage
+{
+
+}
+.texttd
+{
+word-wrap: break-word;
+max-width: 400px;
 }

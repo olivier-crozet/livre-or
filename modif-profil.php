@@ -56,7 +56,7 @@ if(isset($_POST['newlogin']) AND !empty($_POST['newlogin']) AND $_POST['newlogin
       if($mdp1 == $mdp2) {
          $insertmdp = $bdd->prepare("UPDATE utilisateurs SET password = ? WHERE id = ?");
          $insertmdp->execute(array($mdp1, $_SESSION['id']));
-         header('Location: livre-or/livreor.php');
+         header("location: livre-or.php?id=".$_SESSION['id']);
       } else {
          $erreur = "Vos deux mdp ne correspondent pas !";
       }

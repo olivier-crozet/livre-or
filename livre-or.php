@@ -235,6 +235,7 @@ $req_jointe = "SELECT  login,  commentaire, date FROM utilisateurs LEFT JOIN com
     //$row = mysqli_fetch_all($req_jointe_bdd);
 ?>
                      <!--AFFICHE DE LA DATA BASE-->
+  <div class="div-affichage">
        <table class="table-affichage">        
       <?php 
 
@@ -256,6 +257,8 @@ $req_jointe = "SELECT  login,  commentaire, date FROM utilisateurs LEFT JOIN com
          }
 endforeach ;
 ?>
+</table>
+</div>
 <?php
 if (isset($erreur))
      {
