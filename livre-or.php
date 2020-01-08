@@ -90,7 +90,7 @@ if (isset($_SESSION['id']))
   </li>
   </li> 
   <li class="oc-onglet"><a class="oc-nav-marg" href="projet.php/cv/cvolivier.html">C.V</li></a>
-  <li class="oc-onglet"><a class="oc-nav-marg" href="projet.php/work-in-progress/work-in-progress.html">contact</li></a>
+  <li class="oc-onglet"><a class="oc-nav-marg" href="contact.php">contact</li></a>
   </ul>
   </nav>	
 </header>
