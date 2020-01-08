@@ -1,3 +1,7 @@
+<?php
+    $connexion = mysqli_connect("localhost","root","","livreor");
+    
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -59,8 +63,32 @@
   </nav>    
 </header>    
     <h1 class="titre1">Contact</h1>
+             <?php
+    if (!empty($_POST["envoi"])) {
+        
+ 
+
+    if (isset($_POST['email']) && isset($_POST['message'])) {
+
+    echo "string";
+        
+        $mail=$_POST['email'];
+        $message=$_POST['message'];
+       var_dump($mail);
+           
+            $requete="INSERT INTO message_admin(mail,message)
+                                VALUES (\"$mail\",\"$message\")";
+                    $inser= mysqli_query($connexion, $requete);
+                    header("location: index.php");
+                   
+        
+
+    }
+       }    
     
-    <form method="post">
+?>
+    <form method="POST" action="">
+   
      <table class="tableau-form">
      <tr>
          <td><label>Email</label></td>       
@@ -75,19 +103,6 @@
         <input class="bouton" type="submit" name="envoi" value="envoyé">
     </form>
     
-    <?php
-    if (isset($_POST['message'])) {
-        $position_arobase = strpos($_POST['email'], '@');
-        if ($position_arobase === false)
-            echo '<p>Votre email doit comporter un arobase.</p>';
-        else {
-            $retour = mail('olivier-crozet@laplateforme.io', 'Envoi depuis la page Contact', $_POST['message'], 'From: ' . $_POST['email']);
-            if($retour)
-                echo '<p>Votre message a été envoyé.</p>';
-            else
-                echo '<p>Erreur.</p>';
-        }
-    }
-?>
+
 </body>
 </html>
