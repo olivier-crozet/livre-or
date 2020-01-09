@@ -1,0 +1,111 @@
+
+body
+      {
+      	font-family: 'Comic Sans MS', cursive;
+      }
+header
+      {
+      	background-color: #1B1ADC;
+      	text-align: center;
+      }
+.img1{
+	  width:5%;
+     }
+h1
+   {
+   	color: #3c3c3c;
+   }
+nav
+    {
+    width:120px;
+
+    }
+nav ul
+    {
+    padding: 0px;
+    padding: 0px;
+    list-style-type: none;
+    text-align: center;
+    width: 120px;
+    }
+nav li
+      { background-color: #333B40;
+      	flex-direction: column;
+      	width: 120px;
+      	height: 90px;
+      	margin:0px;
+      	padding:0px;
+      	border:1px solid black;
+      	line-height: 50px;
+      }
+
+nav li :hover
+             {
+               background-color: blue;
+
+             }
+
+nav li a
+        {
+        	
+        	text-decoration: none;
+        	color:white;
+        }
+#sec
+     {
+        display: flex;
+     	flex-direction: row;
+     	background-color:
+     }
+
+#para1
+          {
+          	background-color: ;
+          	flex-direction: column;          	
+          	margin: 0%;
+          	width: 80%;
+          	text-align:center;
+          }
+.art
+    {
+    flex-direction: column;
+
+    }
+
+.img1{
+	  width:5%;
+     }
+.desc
+     {
+     	background-color: #4F7FFA;
+     	display: flex;
+     	flex-direction:row;
+     	color: white;
+     	
+     }
+.lesdiv
+       {background-color: #4F7FFA;
+       	flex-direction: column;
+       	width: 30%;
+       	margin:0;
+       	text-align: center;
+       }
+.par
+     {background-color: ;
+      font-size: 15px;
+     }
+.captu
+      {background-color: ;
+      	display: flex;
+      	flex-direction: column;
+      	width: 69%;
+      	margin:0;
+      }
+h1
+      {
+    	color: white
+      }
+.fb
+    {
+    	text-align: center;
+    }

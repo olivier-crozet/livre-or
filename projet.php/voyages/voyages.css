@@ -1,0 +1,169 @@
+body 
+    {
+     margin: 0;
+    }
+header
+      {
+      	background-color: #EFD295;
+        position: fixed;
+        width: 100%;
+      }
+nav 
+    {
+    	position: sticky;
+    }
+
+.menu, .menu ul {
+  padding:0;
+  margin:0;
+  list-style: none;
+  text-align: center;
+}
+
+.menu li {
+  display:inline-block;
+  vertical-align: top;
+  position: relative;
+  
+}
+.menu li li {
+  display:inherit;
+}
+.menu a {
+  display:block;
+  padding:5px 50px;
+  text-decoration: none;
+  color:#fff;
+  font-family:arial;
+}
+.menu ul li a {
+  padding:5px 8px;
+}
+.menu ul {
+  position: absolute;
+  z-index: 1000;
+  min-width:100%;
+  white-space: nowrap;
+  text-align: left;
+}
+.menu ul ul {
+  left:100%;
+  top:0;
+  overflow: hidden;
+  max-width: 0;
+  min-width: 0;
+  transition: 0.3s all;
+}
+.menu ul li:hover ul {
+  max-width: 30em;
+}
+.menu ul li {
+  max-height:0;
+  overflow: hidden;
+  transition:all 0.8s;
+}
+.menu li:hover li {
+  max-height: 15em;
+  overflow: visible;
+}
+/* background des liens menus */
+.violet {
+
+
+}
+
+.violet, li:hover {
+    background:#65537A;
+}
+.oc-onglet
+          {
+            width: 10em;
+            height:5em;
+            color: white;
+          }
+.oc-nav-marg
+            {
+              margin-top: 20%;
+            }
+.oc-back1
+         {
+          background-color: #EFD295;
+         }
+.oc-sous-sous
+              {
+                background-color: #EFD295;
+              }
+.oc-sous-sous:hover
+             {
+              background-color: #65537A;
+             }
+
+             /*images*/
+ 
+.oc-foto-accueil
+        {
+         max-width: 100%;
+        }
+
+              /*footer*/
+
+footer {
+          background-color: #5C5956;
+        }
+
+
+.oc-lien {
+ 
+  text-decoration: none;
+  color: white;
+}
+
+.jl-lien:hover {
+ 
+  text-decoration: none;
+  color: pink;
+}
+
+.oc-footer-navigation {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 25vh;
+  padding-top: 10px;
+  justify-content: space-evenly;
+}
+
+.oc-container {
+  display: flex;
+  flex-direction : column;
+}
+
+.oc-columns {
+  display: flex;
+  flex-direction : row;
+}
+
+.oc-menu {
+  color: white;
+  margin-left: 35px;
+  font-family: "Montserrat-SemiBold";
+}
+
+.oc-nav2 {
+  margin: 0;
+  text-decoration: none;
+  color: white;
+  list-style: none;
+  font-family: "Montserrat-Regular";
+  font-size: 14px;
+}
+
+.oc-nav3 {
+   margin: 0;
+   text-decoration: none;
+   color: white;
+   list-style: none;
+   font-family: "Montserrat-Regular";
+   font-size: 14px;
+}
+                           

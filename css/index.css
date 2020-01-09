@@ -1,0 +1,167 @@
+
+
+.oc-index-titre1
+{
+ text-align:center;
+ padding-top: 5%;
+}
+.oc-div-background-index
+{
+  background-image: url(../image/code2.png);
+  padding: 5%;
+  padding-left: 0%;
+  padding-right: 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.oc-presentation-index
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+    margin-top: 3%;
+   
+}
+.oc-article-nomprenom-index
+{
+	width: 24%;
+    text-align: center;
+    color: white;
+    margin-top: -5%;
+    text-shadow: 3px 3px 3px black;
+
+}
+.oc-article-monimage-index
+{
+	width: 30%;
+    text-align: center;
+}
+.oc-monimage-index
+{
+	width: 45%;
+    border: gold;
+    border-radius: 126PX;
+    margin-top: -11%;
+}
+.oc-devise-index
+{
+	text-align: center;
+    margin-top: 4%;
+    background-color: #25264099;
+    padding: 2%;
+    border-style: outset;
+    box-shadow: #80808057 3px 2px;
+    width: 38%;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    margin-left: 4%;
+}
+               /* PARTIE PHP*/
+
+.oc-section2-index
+{
+	display: flex;
+    flex-direction: column;
+    background-color: #4fc9e994;
+    padding: 3%;
+}
+.oc-div-php1
+{
+  display: flex;
+  flex-direction: row;
+}
+.oc-article-connexion-php
+{
+	width: 35%;
+    text-align: center;
+}
+.oc-article-discussion-php
+{
+	width: 35%;
+    text-align: center;	
+}
+.oc-titre-php-index
+{
+	text-align: center;
+    border: ridge;
+    margin: 0%;
+}
+#image-connexion-php
+{
+	    width: 80%;
+	    box-shadow: 3px 2px #00000091;
+}
+.effet
+{
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.effet:hover  {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+	
+#image-discussion-php
+{
+	width: 80%;
+	box-shadow: 3px 2px #00000091;
+}
+/*PARTIE HTML*/
+.oc-section3-index
+{
+display: flex;
+flex-direction: column;
+}
+.oc-div-html
+{
+  display: flex;
+  flex-direction: row;
+  margin-top: 2%;
+
+}
+.oc-titre-html
+{
+	text-align: center;
+    border-style: ridge;
+    margin: 0%;
+}
+#oc-404-html
+{
+ width: 80%;
+ box-shadow: 3px 2px #00000091;	
+}
+#section-index
+{
+background-image: url(../image/code3.jpg);
+ background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#oc-work-in-progress
+{
+	width: 80%;
+	box-shadow: 3px 2px #00000091;
+}
+#oc-btp
+{
+  width: 80%;
+  box-shadow: 3px 2px #00000091;
+}
+#app
+{
+  width: 80%;
+  box-shadow: 3px 2px #00000091;
+}
+#voyages
+{
+   width: 80%;
+  box-shadow: 3px 2px #00000091; 
+}
+#agenda
+{
+  width: 80%;
+  box-shadow: 3px 2px #00000091;
+}

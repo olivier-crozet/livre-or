@@ -1,0 +1,13 @@
+.oc-section-inscription
+{
+	text-align: -webkit-center;
+    padding-top: 10%;
+}
+.oc-paneaulogin-inscription
+{
+	    background-color: #cceeef;
+    width: 45%;
+    padding: 4%;
+    border-radius: 100%;
+    box-shadow: grey 3px 3px;
+}

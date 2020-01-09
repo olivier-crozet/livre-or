@@ -1,0 +1,116 @@
+body
+      {
+      	background-image: url(palissade.jpg);
+      	background-size: cover;
+      	margin-left: 2%;
+      	font-family: cursive;
+      }
+
+section
+       {
+       	margin:0;
+       }
+
+header
+      {
+      background-color:#63AFF5;
+      text-align: center;
+      padding: 0;
+      margin-top: -2%;
+      font-size: 25px;
+      }
+
+
+
+nav ul
+    {
+    padding: 0px;
+    padding: 0px;
+    list-style-type: none;
+    text-align: center;
+    }
+nav li
+      { background-color: #333B40;
+      	display: inline-block;
+      	width: 250px;
+      	height: 50px;
+      	margin:0px;
+      	padding:0px;
+      	border:1px solid black;
+      	line-height: 50px;
+      }
+
+nav li :hover
+             {
+               background-color: blue;
+             }
+
+nav li a
+        {
+        	display: block;
+        	text-decoration: none;
+        	color:white;
+        }
+.hautdepage
+           {
+           	display: inline-block;
+           	margin:0;
+           	width: 60%;
+           }
+.windec
+        {
+        	
+         background-color: #E7EDF1;
+        margin:0;
+        text-align: center;
+        color: black;
+        }
+.logwin
+       {
+       	width: 70%;
+       	display: inline-block;
+       	margin: 0;
+       }
+.seclogwin
+          {
+           width: 35%;
+           margin: 0px;
+           float: right;
+           text-align: center;
+           padding-right: 5%;
+
+          }
+.mobil
+      {
+       width: 50%;
+      }
+.capt
+    {
+     width: 60%;
+
+    }
+.captures
+         {
+         	text-align: center;
+         	color: white;
+         }
+footer
+      {
+      display: flex;
+      flex-direction: row;	
+      justify-content: space-between;
+      }
+.fb
+   {
+   	width: 20%;
+   	margin-left: 60%;
+   }
+.twitter
+        {
+         width: 20%;	
+        }   
+
+    
+    
+
+    

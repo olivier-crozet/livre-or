@@ -1,0 +1,328 @@
+
+body
+    {
+    background-image:url(image/terrainart.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Apple Chancery, cursive;
+    color:white;
+
+    
+    }
+   
+nav ul
+    {
+    padding: 0px;
+    padding: 0px;
+    list-style-type: none;
+    text-align: center;
+    font-size: 25px;
+    }
+nav li
+      { 
+        display: inline-block;
+        width: 160px;
+        height: 80px;
+        margin:0px;
+        padding:0px;        
+        line-height: 80px;
+      }
+
+nav li :hover
+             {
+              color: red;
+             }
+
+nav li a
+        {
+          display: block;
+          text-decoration: none;
+          color:#FC6E1C;
+        }
+
+section{
+        text-align: center;
+       }
+h1
+    {
+      
+    	text-align: center;
+      color: white;
+      text-shadow: 1px 3px black;
+
+    }
+
+.titrelogin
+          {
+          	text-align: center;
+          	margin-bottom: 0;
+            text-align: center;
+             margin-top: -17px;
+             margin-bottom: 17px;
+}
+          }      
+
+table
+      {
+        margin: auto;
+        margin-top: 5%;
+        margin-bottom: 3%;
+
+      }
+
+
+.logofb
+       {
+       	width: 5%
+       }
+.logoinsta
+         {
+          width: 5%;
+          }
+footer
+      {
+      	display: inline-block;
+      	text-align: center;
+
+      }   
+
+/*css pour formulaire*/
+
+
+            }
+
+/*css pour motdepasse */
+
+.boomotdepasse
+               {
+                background-image:url(siegevide2.jpg);
+                background-repeat: no-repeat;
+                background-size: cover; 
+                }
+.headermotdepasse
+                {
+
+                   text-align: center;
+                  border:solid 2px #22FF3C;
+                  box-shadow: #01136D 2px 6px;
+                  background-image:linear-gradient(50deg, white, #D90D2F);
+                  color:#22FF3C;
+                  width: 70%;
+                  margin-left: 15%;
+                  margin-bottom:8%;
+                }
+.champmotdepasse
+                {
+                  
+                 display: flex;
+                 flex-direction: column;
+                 width: 50%;
+                 margin: 0 auto;
+                 font-size: 25px;
+                 color: #22FF3C;
+                }
+#identmotdepasse
+                {
+                 margin-bottom: 5%;
+                 }
+.footandteam
+            {
+              text-decoration: none;
+            }
+.ballonmotdepasse
+                 {
+                  transition: 3S;
+                  flex-direction: column-reverse;
+                  margin-top: 5%;
+                float: right;
+                  width: 20%;                 
+                 }
+.oc-profil-infouser
+                  {
+                    
+    width: 20%;
+    text-align: center;
+    margin: auto;
+    margin-top: -3%;
+                  }
+.div-tableau-connexion
+{
+      width: 24%;
+    padding: 3%;
+    margin: auto;
+    margin-top: 6%;
+    background-color: #006e10;
+    box-shadow: 5px 3px #2f422ad1;
+    border-radius: 86px 0PX;
+}
+.tablinscri
+{
+     width: 44%;
+    padding: 5%;
+    margin: auto;
+   
+    background-color: #006e10;
+    box-shadow: 5px 3px #2f422ad1;
+    border-radius: 86px 0PX;
+}
+.paneaulogin
+{
+      padding-top: 3%;
+    background-color: #006e10;
+    width: 40%;
+    height: 35%;
+    margin: auto;
+    border-radius: 121px 10px;
+    box-shadow: 6px 5px #2f422ad1;
+}
+.tbladmin
+{
+  
+  border-collapse: collapse;
+  border:solid 1px white;
+ 
+ 
+}
+.tableadmin
+{
+  border-collapse: collapse;
+}
+/*.ballon
+{
+ float:right; 
+ width: 6%;
+position: absolute;
+    animation: ballon 7s ;
+    
+    margin-left: -44%;
+
+
+
+}
+@keyframes ballon{
+    0%{transform: translateX(0px);}
+    10%{opacity: 1;}
+    25%{opacity: 1;}
+    30%{opacity: 1;}
+    33%{opacity: 1;}
+    80%{opacity: 1;}
+    81%{opacity: 1;}
+    90%{opacity: 1;}
+    99%{transform: translateX(1108PX);}
+    100%{opacity: 0;}
+   } */
+.butonconexion
+{
+  padding: 15px 25px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #62bd4ecc;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #386246;
+
+}
+
+.butonconexion:hover {background-color: #3e8e41}
+
+.butonconexion:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.butonconexion2
+{
+ padding: 15px 25px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #62bd4ecc;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #386246;
+}
+
+.butonconexion2:hover {background-color: #3e8e41}
+
+.butonconexion2:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.div-tabladmin
+{
+  background-color: #90bce669;
+  width: 25%;
+    padding: 5%;
+    margin: auto;
+    height: 45%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.butonconexion-modif
+{
+  padding: 15px 25px;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #62bd4ecc;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #386246;
+}
+.butonconexion-modif:hover
+{
+background-color: #3e8e41;
+}
+.butonconexion-modif:activ
+{
+   background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.buton-inscription
+{
+   padding: 15px 25px;
+    height: 7%;
+    width: 19%;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #62bd4ecc;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #386246;
+    margin-bottom: -2%;
+}
+.buton-inscription:hover
+{
+background-color: #3e8e41;
+}
+.buton-inscription:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

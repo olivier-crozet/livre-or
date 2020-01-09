@@ -1,0 +1,212 @@
+
+
+
+             /*fin header*/
+
+.h1ladominique
+  {
+     background-image: url(../image/panorama-dominique.jpg);
+     padding-top: 80px;
+     height: 30%;
+     background-size: cover;
+
+
+  }
+.oc-section1-31
+           {
+            padding-top: 0;
+            justify-content: space-between;
+            
+            display: flex;
+            flex-direction: row;
+           }
+.oc-article1-31
+            {
+             flex-direction: column;
+             width: 70%;
+             margin:auto;
+            }
+h1
+  {
+    text-align: center;
+    color: white;
+    font-size: 2em;
+
+  }
+
+
+.oc-div1-acrticle1-31
+                      {
+                      
+                        text-align: center;
+                        background-color:#efea954d;
+                        border-radius: 0px 10px 0px 10px;
+                        padding: 5%;
+                      }
+.oc-img1-aside-accueil
+                      {
+                       width: 100%;
+                      }
+.oc-img2-aside-accueil
+                       {
+                        width: 100%;
+                       }
+
+
+
+.oc-aside-31
+             {
+              flex-direction: column;
+              width: 25%;
+              overflow: scroll;
+              overflow-x: hidden;
+              height: 500px;
+             }
+.oc-div2-acrticle1-31
+                    {
+                    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+                    }             
+.billet
+        {
+          text-align: center;
+        border:solid 15px #efea954d;
+        }
+table,td,tr
+     {
+      border:solid black 3px;
+      border-collapse: collapse;
+     }
+table
+     {
+      width: 100%;
+      background-color: #efea954d;
+      text-align: center;
+     }
+.oc-section2
+            {
+              background-image: url(../image/oc-foto-dominica.jpg);
+              background-repeat: no-repeat;
+              background-size: cover;
+
+            }
+.oc-div-peuple
+              {
+                justify-content: space-around;
+                display:flex;
+              }
+.oc-foto-peuple
+               {
+                width: 300px;
+                margin: auto;
+                margin-bottom: 2%;
+               }
+.oc-p1
+      {
+        width: 60%;
+        background-color: #efd29570;
+        margin: auto;
+        padding: 2%;
+        border-radius: 5px 20px 5px 20px;
+      }
+.titrehistoire
+              {
+                text-align: center;
+                background-color: #efd295;
+              }
+.titrerichesse   
+              {
+               text-align: center;
+               background-color:#efd295; 
+               margin: 0;
+               padding: 1%;
+              }
+.oc-article-mer
+                {
+                  background-image: url(../image/drapeau-dominique.jpg);
+                  padding: 5%;
+                  height: 60%;
+                 display: flex;
+                 justify-content: space-around;
+                }
+.oc-div-mer
+           {
+             overflow: scroll;
+             overflow-x: hidden;
+            width: 20%;
+            background-color: #efd295eb;
+            text-align: center;
+            border:1px solid gold;
+            border-radius: 0px 10% 0px 10%;
+            padding: 2%;
+            opacity:0.5;
+                }
+.oc-div-mer:hover
+                {
+        opacity:1;
+                  }
+
+
+.imgcochon
+          {
+            width:80%;
+           
+          }
+          /*riviere*/
+
+.oc-div-riviere
+               {
+                 overflow: scroll;
+                overflow-x: hidden;
+                width: 20%;
+                text-align: center;
+                background-color: #efd295eb;
+                border:1px solid gold;
+                border-radius:0px 10% 0px 10%;
+                padding:2%;
+
+
+               opacity:0.5;
+                }
+.oc-div-riviere:hover
+                {
+        opacity:1;
+                  }
+
+.foto-riviere-dominique
+                        {
+                          width: 80%;
+                        }
+.oc-div-rando
+              {
+                overflow: scroll;
+                overflow-x: hidden;
+                
+                width: 20%;
+                text-align: center;
+                background-color: #efd295eb;
+                border:1px solid gold;
+                border-radius: 0px 10% 0% 10%;
+                padding: 2%;
+                opacity:0.5;
+                }
+.oc-div-rando:hover
+                {
+        opacity:1;
+                  }
+
+.foto-rando-dominique
+                      {
+                        width: 80%;
+                      }
+
+
+
+              /*footer*/
+
+
+
+
+

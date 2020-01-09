@@ -1,0 +1,49 @@
+.titre1
+{
+	text-align:center;
+	padding-top: 80PX;
+    color: white;
+    text-shadow: black 4px 3px;
+}
+body
+{
+	background-image: url(../image/clavier-red.jpg);
+	background-size: cover;
+    background-repeat: no-repeat;
+}
+.tableau-form
+{
+margin: auto;
+    background: #0000ff73;
+    padding: 5%;
+    border: solid 3PX #ff000096;
+    color: white;
+    box-shadow: #000000ad 6px 5PX;
+    width: 45%;
+    margin-bottom: 2%;
+}
+
+.bouton
+{
+	width: 10%;
+    text-align: center;
+    margin-left: 46%;
+    height: 71PX;
+    border-radius: 100%;
+    background-color: #4cc2c5ed;
+    color: white;
+    box-shadow: #000000a1 4px 4px;
+}
+.bouton:hover
+{
+	background-color: red;
+	color: white;
+}
+.input
+{
+	width: 100%;
+}
+.erreur
+{
+	color :white;
+}
