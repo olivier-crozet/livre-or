@@ -86,3 +86,9 @@ display: flex;
 word-wrap: break-word;
 max-width: 400px;
 }
+.er
+{
+       position: absolute;
+    margin-top: 17%;
+    margin-left: 2%; 
+}

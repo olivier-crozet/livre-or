@@ -99,6 +99,7 @@ if (isset($_SESSION['id']))
    
    <h1 class="titre-livreor">Livre d'or</h1>
 
+
 <?php
   $bdd = new PDO('mysql:host=127.0.0.1;dbname=livreor','root','');
   if (isset($_POST['envoiconnexion']))
@@ -120,12 +121,12 @@ if (isset($_SESSION['id']))
             }
           else
           {
-          $erreur = "<br/>mauvais pseudo ou mauvais mot de passe !";
+          $erreur = "<p class=\"er\">mauvais pseudo ou mauvais mot de passe !</P>";
           }
           }
       else
       {
-      $erreur = "<p class=\"er\"><br/>tous les champ doives etre completés !";
+      $erreur = "<p class=\"er\"><br/>tous les champ doives etre completés !</p>";
       } 
   }
   else
@@ -195,6 +196,12 @@ if(isset($_SESSION['id']))
                <!--PARTI ERREUR-->
 
  </article>
+ <?php
+if (isset($erreur))
+     {
+      echo "<strong>".'<font size= "5px" color="red">'.$erreur.'</font>'."</strong>";
+    }
+?> 
 </section>
 <section class="section-com">
 
@@ -259,12 +266,7 @@ endforeach ;
 ?>
 </table>
 </div>
-<?php
-if (isset($erreur))
-     {
-      echo "<strong>".'<font size= "5px" color="red">'.$erreur.'</font>'."</strong>";
-    }
-?> 
+
 </section>
 
  
