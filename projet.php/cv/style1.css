@@ -8,7 +8,7 @@
 .colone-gauche
                {
                
-               max-width: 30%;
+               max-width: 13%;
                 text-align: center;
                 background-color:#C0C0C0;
                 height:1000px;
@@ -66,31 +66,50 @@
 
 .competence
            {
-       	display:flex;
-       	margin-left:300px;
-       	margin-right:00px;
-       	margin-top:0px;
-       	margin-bottom:50px; 
-       	width:450px; 
-       	       	border-bottom: 2PX solid black;
+       	display: flex;
+        margin-left: 247px;
+        width: 658px;
+        border-bottom: 2PX solid black;
+        flex-direction: column;
 
            }
 
 .experience
-           {margin-left:180px;
-            margin-top: 120px;
-                   	border-bottom: 2PX solid black;
-
+           {
+            margin-left: 221px;
+            margin-top: 16px;
+            border-bottom: 2PX solid black;
+            margin-bottom: 25PX;
            }
 
 .formation
            {
-           	margin-left: 180px;
-           	       	border-bottom: 2PX solid black;
+           	margin-left: 215px;
+            border-bottom: 2PX solid black;
 
            }           
 .distinction
             {
              text-align: center;
-             margin-left:250px;
+             margin-top: 28px;
             }
+.telecharger
+{
+  display: flex;
+    justify-content: space-between;
+    width: 150%;
+}
+.date
+{
+  margin-top: -13px;
+  font-size: 12PX;
+  color: grey;
+}
+.para
+{
+  font-size: 13px;
+}
+.distinctiont
+{
+  margin-top: 180px;
+}
