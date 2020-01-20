@@ -113,12 +113,15 @@ nav
 
              
 
+
+
+/* FOOTER*/
+
 footer {
-          background-color:#efd295;
-          text-transform: capitalize;
-          text-shadow: 1px 1px 1px
-          black;
-          font-size: 120%;
+        background-color: #252640;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 1px black;
+    font-size: 95%;
         }
 
 
@@ -135,12 +138,11 @@ footer {
 }
 
 .oc-footer-navigation {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 25vh;
-  padding-top: 10px;
-  justify-content: space-evenly;
+display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 23vh;
+    justify-content: space-evenly;
 }
 
 .oc-container {
@@ -150,7 +152,12 @@ footer {
 }
 
 .oc-columns {
-  display: flex;white;
+  display: flex;
+  flex-direction : row;
+}
+
+.oc-menu {
+  color: white;
   margin-left: 35px;
   font-family: "Montserrat-SemiBold";
 }
@@ -172,8 +179,4 @@ footer {
    font-family: "Montserrat-Regular";
    font-size: 14px;
 }
-  flex-direction : row;
-}
 
-.oc-menu {
-  color: 

@@ -117,3 +117,30 @@
 
    </div>      
   </section>
+         <!--FOOTER-->
+<footer>
+  <section class="oc-footer-navigation">
+  <div class="oc-container">
+   <h3 class="oc-menu">Menu</h3>
+    <div class="oc-columns">
+     <ul class="oc-nav2">
+      <li ><a class="oc-lien" href="index.php">accueil</a></li><!--
+  --> <li ><a class="oc-lien" href="livre-or.php">livre or</a></li><!--
+   --><li ><a class="oc-lien" href="projet.php/cv/cvolivier.html">cv</a></li>
+      <li><a class="oc-lien" href="contact.php">contact</a></li>
+    
+   </div>
+  </div>
+ <div class="oc-container">
+  <h3 class="oc-menu">Réseau</h3>
+   <div class="oc-columns">
+    <ul class="oc-nav2">
+      <li ><a class="oc-lien" href="https://www.linkedin.com/">LinkedIn</a></li>
+      <li ><a class="oc-lien" href="mailto:olivier.crozet@laplateforme.io">mail</a></li>
+    </ul>
+   </div>
+  </div>
+ </section>
+</footer>
+</body>
+</html>
